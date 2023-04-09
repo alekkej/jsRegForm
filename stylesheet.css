@@ -229,3 +229,7 @@ label>p {
 #email-error-box {
     color: red;
 }
+
+p>span {
+    color: red;
+}
