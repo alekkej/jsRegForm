@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./reset.css">
+
+</head>
+
+<body class="background">
+    <div class="registration__form">
+        <p class="registration">Регистрация</p>
+        <div class="email-wrapper">
+            <p class="email">E-mail</p>
+            <span class="required-1">*</span><input type="text" placeholder="Введите E-mail"
+                class="input__text input_email" id="email">
+            <div id="email-error-box"></div>
+        </div>
+        <div class="password-wpapper">
+            <p class="password">Пароль</p>
+            <span class="required-2">*</span><input type="password" placeholder="Введите пароль"
+                class="input__text input_password" id="password">
+            <div id="password-error-box"></div>
+        </div>
+        <span class="required-3">*</span><label class="container">
+            <div > <p>Я согласен получать обновления на почту</p>
+                <p id="checkbox-error-box"></p>
+                <input type="checkbox" checked id="checkbox">
+                <span class="checkmark"></span>
+            </div> 
+        </label>
+        <div class="box__button">
+            <button class="authorization__button"><a href="./index_enter.html">Авторизация</a></button>
+            <button class="registration__button" onclick="signUp()">Регистрация</button>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
